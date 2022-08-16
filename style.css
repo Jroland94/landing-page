@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1000px;
+    margin-inline: auto;
+}
+
+button{
+    background: blue;
+    color: white;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* this is the header box */
+.header{
+    background-color: darkblue;
+    color: white;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-block: 10px;
+}
+
+.header ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+/* this is the hero box*/
+.hero{
+    background-color: darkblue;
+}
+
+.hero-content{
+    display: flex;
+    padding-block: 40px;
+}
+
+@media(max-width:800px){
+    .hero-content{
+        flex-direction: column;
+    }
+}
+
+.hero-content-left{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+}
+
+/* this is the blocks box*/
+.blocks{
+    background-color: white;
+    padding-block: 40px;
+}
+
+.blocks h1{
+    text-align: center;
+}
+.blocks-content{
+    display: flex;
+    padding-block: 40px;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 800px){
+    .blocks-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img-block img{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.img-block p{
+    width: 162px;
+
+}
+
+/* this is the quote box */
+.quote{
+    background-color: lightgray;
+    padding-block: 40px;
+}
+
+.quote-content{
+    text-align: center;
+    font-style: italic;
+    width: 80%;
+    margin-inline: auto;
+}
+.quote-name{
+    text-align: end;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* this is the cta box */
+.cta{
+    background-color: white;
+    padding-block: 40px;
+}
+
+.cta-content{
+    background-color: lightblue;
+    display: flex;
+    border-radius: 10px;
+    padding-block: 30px;
+    padding-inline: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.cta-white-border{
+    border: 2px solid white;
+    background-color: lightblue;
+}
+
+/* dit is de footer box */
+.footer{
+    background-color: darkblue;
+    padding-block: 20px;
+}
+
+.footer-content{
+    color: white;
+    text-align: center;
+}
